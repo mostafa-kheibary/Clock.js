@@ -7,6 +7,38 @@ const Mline = document.getElementById('Mline');
 const Hline = document.getElementById('Hline');
 const date = new Date;
 const Hdate =  date.getHours();
+
+DayNight.addEventListener("click" , function () {
+    let bodys = document.body;
+    bodys.classList.toggle("body-night")
+    let main = document.getElementById("darkmode-clock");
+    main.classList.toggle("darkmode-clock");
+    let clocks = document.getElementById("center-clock");
+    clocks.classList.toggle("darkmode-clock");
+    let lops = document.getElementById("lops");
+    lops.classList.toggle("white-elements");
+    let lops2 = document.getElementById("lops2");
+    lops2.classList.toggle("white-elements");
+    let lops3 = document.getElementById("lops3");
+    lops3.classList.toggle("white-elements");
+    let lops4 = document.getElementById("lops4");
+    lops4.classList.toggle("white-elements");
+    let hline = document.getElementById("Hline");
+    hline.classList.toggle("white-elements");
+    let mline = document.getElementById("Mline");
+    mline.classList.toggle("white-elements");
+    let daytext = document.getElementById("DayText");
+    daytext.classList.toggle("daytext-color");
+    let datetext = document.getElementById("DateText");
+    datetext.classList.toggle("daytext-color");
+    let dig = document.getElementById("dig");
+    dig.classList.toggle("daytext-color");
+    let dayNight = document.getElementById("day-night");
+    dayNight.classList.toggle("inset");
+    let teh = document.getElementById("tehran");
+    teh.classList.toggle("daytext-color");
+});
+
 // if it day or night
 if(Hdate >=6 && Hdate<= 18){
 

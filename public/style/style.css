@@ -1,6 +1,7 @@
 body{
     background: var(--bg-color);
     background: linear-gradient(141deg, rgb(234, 244, 255) 0%, rgba(224,224,224,1) 100%);
+    transition: 350ms;
 }
 
 :root{
@@ -13,7 +14,7 @@ html{
 *{
    padding: 0;
    margin: 0;
-   
+   font-family: sans-serif;
 }
 .container{
     margin: 20px;
@@ -27,10 +28,11 @@ html{
     padding: 15px;
     background: var(--bg-color);
     background: linear-gradient(141deg, --bg-color 0%, rgba(224,224,224,1) 100%);
-    box-shadow:  2px 2px 5px #bbbbbb,
+    box-shadow: inset 2px 2px 5px #bbbbbb,
     -2px -2px 5px #ffffff;;
     border-radius: 50%;
     cursor: pointer;
+    transition: 350ms;
 }
 .check-botton{
     box-shadow: inset 2px 2px 5px #bbbbbb,
@@ -56,6 +58,7 @@ html{
     -10px -10px 20px #ffffff;;
 
     border-radius: 50%;
+    transition: 350ms;
 }
 .lop{
     position: absolute;
@@ -84,6 +87,7 @@ html{
 .sm-clock{
     width: 100px;
     height: 100px;
+    transition: 250ms;
 }
 .sm-clock::after{
     content: '';
@@ -150,4 +154,30 @@ p{
 .otehr-info h4{
     font-weight: 200;
     font-size: 20px;
+}
+.body-night {
+    background: #404040;
+}
+.darkmode-clock {
+    border-radius: 150px;
+    background: #404040;
+    box-shadow:  16px 16px 32px #2a2a2a,
+             -16px -16px 32px #565656;
+}
+.backp {
+    background: black;
+    background-color: black;
+}
+.white-elements {
+    background-color: #f5f5f5;
+}
+.inset {
+    color: #d3d3d3;
+    border-radius: 150px;
+    background: #404040 !important;
+    box-shadow:  5px 5px 10px #2a2a2a,
+             -5px -5px 10px #565656 !important;
+}
+.daytext-color {
+    color: #d3d3d3;
 }
